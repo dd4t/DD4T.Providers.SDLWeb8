@@ -13,7 +13,7 @@ using System.Data;
 using System.Collections;
 using System.IO;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     /// <summary>
     /// Provide access to binaries in a Tridion broker instance

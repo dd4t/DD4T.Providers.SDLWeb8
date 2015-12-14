@@ -11,7 +11,7 @@ using DD4T.ContentModel.Contracts.Resolvers;
 using DD4T.ContentModel.Contracts.Configuration;
 using DD4T.ContentModel.Contracts.Logging;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     /// <summary>
     /// 
@@ -157,7 +157,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
             LoggerService.Debug("GetLastPublishedDateByUrl found publication id {0}, url = {1}", pubId, url);
             using (var pMetaFactory = new PageMetaFactory(pubId))
             {
-                using (IPageMeta pageInfo = pMetaFactory.GetMetaByUrl(pubId, url))
+                IPageMeta pageInfo = pMetaFactory.GetMetaByUrl(pubId, url); // TODO: Temporarily removed using statement, because IPageMeta is not IDisposable (yet) in CDaaS build #422
                 {
                     if (pageInfo == null)
                     {
