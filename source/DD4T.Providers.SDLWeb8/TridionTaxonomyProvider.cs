@@ -5,7 +5,7 @@ using Dynamic = DD4T.ContentModel;
 using Tridion.ContentDelivery.Taxonomies;
 using DD4T.ContentModel.Contracts.Providers;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     public class TridionTaxonomyProvider : BaseProvider, ITaxonomyProvider, IDisposable
     {

@@ -1,6 +1,6 @@
 ﻿using DD4T.ContentModel;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     using System;
     using System.Collections.Generic;

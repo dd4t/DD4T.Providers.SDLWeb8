@@ -11,7 +11,7 @@ using DD4T.ContentModel.Querying;
 using DD4T.Utils;
 using DD4T.ContentModel.Contracts.Logging;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     /// <summary>
     /// 

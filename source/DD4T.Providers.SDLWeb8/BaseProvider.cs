@@ -4,7 +4,7 @@ using DD4T.ContentModel.Contracts.Logging;
 using DD4T.ContentModel.Contracts.Configuration;
 using System;
 
-namespace DD4T.Providers.SDLTridion2013sp1
+namespace DD4T.Providers.SDLWeb8
 {
     public class BaseProvider : IProvider
     {
