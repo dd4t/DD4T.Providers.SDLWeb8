@@ -79,20 +79,20 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Data" />
     <Reference Include="Tridion.ContentDelivery, Version=8.1.0.1238, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.0\lib\net45\Tridion.ContentDelivery.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.1\lib\net45\Tridion.ContentDelivery.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Tridion.ContentDelivery.AmbientData, Version=8.1.0.1229, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.0\lib\net45\Tridion.ContentDelivery.AmbientData.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.1\lib\net45\Tridion.ContentDelivery.AmbientData.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Tridion.ContentDelivery.Configuration, Version=8.1.0.1219, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.0\lib\net45\Tridion.ContentDelivery.Configuration.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.1\lib\net45\Tridion.ContentDelivery.Configuration.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Tridion.ContentDelivery.Interop, Version=8.1.0.1238, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.0\lib\net45\Tridion.ContentDelivery.Interop.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\sdl-web-8-content-delivery.1.0.1\lib\net45\Tridion.ContentDelivery.Interop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
