@@ -69,9 +69,8 @@
       <HintPath>..\packages\DD4T.Core.2.2.2\lib\net45\DD4T.ViewModels.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -142,4 +141,5 @@
     <Message Text="Mimic SDL Web 8 NuGet packages if there are files in the dependency folder" Importance="high" />
     <CallTarget Targets="MimicPackages" />
   </Target>
+  <Import Project="$(SolutionDir)\PrivateFalse.targets" Condition="Exists('$(SolutionDir)\PrivateFalse.targets')" />
 </Project>
