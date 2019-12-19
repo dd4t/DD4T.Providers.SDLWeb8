@@ -154,6 +154,9 @@
 			<PackageFiles Include="$(BuildWorkDirectory)\**\*.dll;$(BuildWorkDirectory)\**\*.pdb;$(BuildWorkDirectory)\**\*.xml;"/>
 		</ItemGroup>
 
+		<Message Text="PackageFiles = @(PackageFiles)" />
+
+
 		<!-- Build NuGet package structure -->
 		<MakeDir Directories="@(NuGetStructureFolders)" />
 		<Copy SourceFiles="@(PackageFiles)" DestinationFiles="@(PackageFiles->'$(BuildNuGetFramework40Directory)\%(Filename)%(Extension)')" />
@@ -161,7 +164,6 @@
 		<!-- Copy nuspec file -->
 		<Copy SourceFiles="$(NuSpecFileName)" DestinationFolder="$(BuildPackageDirectory)" />
 
-		<Message Text="PackageFiles = $(PackageFiles)" />
     	<!-- Get the productversion from the assemblies -->
     	<GetInformationalVersion AssemblyFile="@(PackageFiles)">
     		<Output TaskParameter="Version" PropertyName="VersionInfo"/>
