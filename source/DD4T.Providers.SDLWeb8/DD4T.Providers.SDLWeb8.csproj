@@ -140,12 +140,6 @@
   <Target Name="BeforeBuild">
     <Message Text="Mimic SDL Web 8 NuGet packages if there are files in the dependency folder" Importance="high" />
     <CallTarget Targets="MimicPackages" />
-	
-	 <ItemGroup>
-      <PackageFiles Include="$(SolutionDir)\**\*.*;"/>
-    </ItemGroup>
-    <Message Text="%(PackageFiles.FullPath)"/>
-	
   </Target>
   <Import Project="$(SolutionDir)\PrivateFalse.targets" Condition="Exists('$(SolutionDir)\PrivateFalse.targets')" />
 </Project>
