@@ -167,10 +167,14 @@
     	<GetNewDevVersion OldVersion="$(VersionInfo)" Condition="'$(Configuration)' == 'Debug'">
     		<Output TaskParameter="NewVersion" PropertyName="VersionInfo"/>
     	</GetNewDevVersion>
+		
+		<Message Text="VersionInfo: $(VersionInfo)" />
 
 		<PropertyGroup>
 			<NuSpecFile>$(BuildPackageDirectory)\$(ProductName).nuspec</NuSpecFile>
 		</PropertyGroup>
+
+		<Message Text="NuSpecFile: $(NuSpecFile)" />
 
 		<!-- Update version in nuspec file -->
 		<XmlUpdate XmlFileName="$(NuSpecFile)" XPath="//version" Value="$(VersionInfo)" />
