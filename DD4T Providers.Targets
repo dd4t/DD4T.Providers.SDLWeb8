@@ -161,6 +161,7 @@
 		<!-- Copy nuspec file -->
 		<Copy SourceFiles="$(NuSpecFileName)" DestinationFolder="$(BuildPackageDirectory)" />
 
+		<Message Text="PackageFiles = $(PackageFiles)" />
     	<!-- Get the productversion from the assemblies -->
     	<GetInformationalVersion AssemblyFile="@(PackageFiles)">
     		<Output TaskParameter="Version" PropertyName="VersionInfo"/>
