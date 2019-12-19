@@ -146,16 +146,11 @@
 			<BinFiles Include="$(BuildBinDirectory)\**\*.*" />
 		</ItemGroup>
 
-		<Message Text="BuildWorkDirectory = $(BuildWorkDirectory)" />
-
 		<!-- Flatten file structure -->		
 		<Copy SourceFiles="@(BinFiles)" DestinationFiles="@(BinFiles->'$(BuildWorkDirectory)\%(Filename)%(Extension)')"/>
 		<ItemGroup>
 			<PackageFiles Include="$(BuildWorkDirectory)\**\*.dll;$(BuildWorkDirectory)\**\*.pdb;$(BuildWorkDirectory)\**\*.xml;"/>
 		</ItemGroup>
-
-		<Message Text="PackageFiles = @(PackageFiles)" />
-
 
 		<!-- Build NuGet package structure -->
 		<MakeDir Directories="@(NuGetStructureFolders)" />
@@ -173,13 +168,9 @@
     		<Output TaskParameter="NewVersion" PropertyName="VersionInfo"/>
     	</GetNewDevVersion>
 		
-		<Message Text="VersionInfo: $(VersionInfo)" />
-
 		<PropertyGroup>
 			<NuSpecFile>$(BuildPackageDirectory)\$(ProductName).nuspec</NuSpecFile>
 		</PropertyGroup>
-
-		<Message Text="NuSpecFile: $(NuSpecFile)" />
 
 		<!-- Update version in nuspec file -->
 		<XmlUpdate XmlFileName="$(NuSpecFile)" XPath="//version" Value="$(VersionInfo)" />
