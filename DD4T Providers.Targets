@@ -146,6 +146,8 @@
 			<BinFiles Include="$(BuildBinDirectory)\**\*.*" />
 		</ItemGroup>
 
+		<Message Text="BuildWorkDirectory = $(BuildWorkDirectory)" />
+
 		<!-- Flatten file structure -->		
 		<Copy SourceFiles="@(BinFiles)" DestinationFiles="@(BinFiles->'$(BuildWorkDirectory)\%(Filename)%(Extension)')"/>
 		<ItemGroup>
