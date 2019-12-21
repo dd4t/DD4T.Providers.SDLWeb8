@@ -167,7 +167,7 @@
     	<GetNewDevVersion OldVersion="$(VersionInfo)" Condition="'$(Configuration)' == 'Debug'">
     		<Output TaskParameter="NewVersion" PropertyName="VersionInfo"/>
     	</GetNewDevVersion>
-
+		
 		<PropertyGroup>
 			<NuSpecFile>$(BuildPackageDirectory)\$(ProductName).nuspec</NuSpecFile>
 		</PropertyGroup>
